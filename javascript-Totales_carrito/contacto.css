@@ -1,0 +1,88 @@
+/* Estructura del encabezado */
+header nav {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    margin: 0 60px;
+  }
+  
+  /* Elementos dentro del menú */
+  header nav div {
+    display: flex;
+    align-items: center;
+    gap: 150px; /* Espacio entre los elementos */
+  }
+  
+  /* Estilo del encabezado */
+  header {
+    box-shadow: 0px 4px 8px 4px rgba(255, 0, 0, 0.5) inset; /* Sombra roja interna */
+    background: linear-gradient(90deg, #D90429, #F77F00); /* Degradado rojo-naranja */
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  /* Centrar el contenido de Contacto */
+  #contacto-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 80vh; /* Mantiene el contenido centrado */
+      padding: 20px;
+      gap: 20px;
+  }
+  
+  /* Tarjeta de información */
+  .perfil {
+      background: rgba(0, 0, 0, 0.8); /* Fondo oscuro con transparencia */
+      padding: 20px;
+      border-radius: 12px;
+      width: 50%;
+      text-align: center;
+      box-shadow: 0px 4px 15px rgba(255, 170, 0, 0.5); /* Sombra con tono dorado */
+      border: 3px solid #ffcc00; /* Borde amarillo vibrante */
+  }
+  
+  /* Imagen de perfil */
+  .foto {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #FFD700; /* Borde dorado */
+      margin-bottom: 15px;
+  }
+  
+  /* Estilo de texto */
+  h2 {
+      font-size: 2em;
+      color: #FFD700; /* Amarillo vibrante */
+      font-family: 'Poppins', sans-serif;
+      text-shadow: 2px 2px 5px black; /* Efecto sombra */
+  }
+  
+  p {
+      font-size: 1.2em;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Estilo de enlaces */
+  a {
+      color: #FFD700;
+      text-decoration: none;
+      font-weight: bold;
+  }
+  
+  a:hover {
+      color: #FF4500;
+      text-shadow: 0 0 8px #FFD700;
+  }
+  
+  /* Pie de página */
+  footer {
+      text-align: center;
+      padding: 10px;
+      background: #222;
+      color: white;
+      font-size: 1em;
+  }
+  

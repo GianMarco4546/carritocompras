@@ -1,0 +1,82 @@
+#productos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 20px; 
+    padding: 20px;
+    justify-content: center;
+}
+
+.tarjeta-producto {
+    background: #222; /* Fondo oscuro con estilo metálico */
+    box-shadow: 0px 4px 15px rgba(255, 170, 0, 0.5); /* Sombra con tono dorado */
+    border-radius: 12px; 
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px solid #ffcc00; /* Borde amarillo brillante */
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 30px rgba(255, 170, 0, 0.7);
+}
+
+/* IMÁGENES */
+.tarjeta-producto img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain; 
+    display: block;
+    border-radius: 5px;
+    background-color: black; /* Fondo negro para destacar las imágenes */
+}
+
+/* TITULO DEL PRODUCTO */
+.tarjeta-producto h3 {
+    font-size: 1.5em; 
+    font-weight: bold;
+    margin: 12px 0;
+    color: #ffcc00; /* Amarillo vibrante como el logo de Dino Rey */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* PRECIO */
+.tarjeta-producto p {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ff6600; /* Naranja intenso */
+    margin-bottom: 15px;
+}
+
+/* BOTÓN DE COMPRA */
+.tarjeta-producto button {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ffcc00, #ff6600);
+    color: #FFD700; /* Amarillo neón */
+    border: 2px solid #ffcc00;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: none;
+    box-shadow: 0px 4px 10px rgba(255, 170, 0, 0.6);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    text-shadow: 2px 2px 5px black; /* Borde negro para resaltar */
+}
+
+.tarjeta-producto button:hover {
+    background: linear-gradient(135deg, #ff6600, #ffcc00);
+    transform: scale(1.08);
+    box-shadow: 0px 6px 15px rgba(255, 170, 0, 0.8);
+}

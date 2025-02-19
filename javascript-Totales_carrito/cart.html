@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estetica.css">
+    <link rel="stylesheet" href="estetica.css">
+    <link rel="stylesheet" href="cart.css">
+    <title>Carrito</title>
+    <script src="./js/comida.js"></script>
+    <script src="./js/cartServicio.js" defer></script>
+	<script src="./js/cart.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html"><img src="./img/restaurante.png" id="logo"></a>
+            <div>
+                <a href="https://www.youtube.com/watch?v=ayQPsFyKzfc">Opening</a>
+                <a href="https://www.netflix.com/pe/title/80007912"> Ver serie completa</a>
+                <a href="./index.html">Lista de productos</a>
+                <a href="./cart.html" ><img src="/img/carrito-compra.png" id="logo-carrito"><span id="conteo_carrito">0</span></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        
+
+        <p id="carrito-vacio">Carrito vacío, <a href="./index.html">elige algunas cartas</a></p>
+		<section id="cart-container"></section>
+
+        <section id="totales">
+            <p>Total unidades: <span id="cantidad">0</span></p>
+            <p>Total precio: S/.<span id="precio">0</span></p>
+            <button disabled>Comprar</button>
+            <button id="reiniciar">Reiniciar</button>
+        </section>
+
+    </main>
+
+
+</body>
+</html>
